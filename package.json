@@ -1,6 +1,6 @@
 {
   "name": "vue-facebook",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Facebook Vue components ",
   "main": "src/index.js",
   "scripts": {
