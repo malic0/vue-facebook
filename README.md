@@ -63,7 +63,7 @@ In Vue/HTML template
 ```
 
 #### Documentation
-Browse through the documentation of each component [here](docs)
+Browse through the documentation of each component [here](./docs/index.md)
 
 #### License
 [MIT](LICENSE)
