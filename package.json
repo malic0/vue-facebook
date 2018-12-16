@@ -1,6 +1,6 @@
 {
   "name": "vue-facebook",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Facebook Vue components ",
   "main": "dist/vue-facebook.js",
   "scripts": {
@@ -22,7 +22,14 @@
     "src"
   ],
   "homepage": "https://github.com/malic0/vue-facebook#readme",
-  "keywords": ["vue", "facebook", "vue-facebook", "fb", "comments", "buttons"],
+  "keywords": [
+    "vue",
+    "facebook",
+    "vue-facebook",
+    "fb",
+    "comments",
+    "buttons"
+  ],
   "license": "MIT",
   "browserslist": [
     "last 2 versions"
