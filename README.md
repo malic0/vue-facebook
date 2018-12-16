@@ -65,5 +65,9 @@ In Vue/HTML template
 #### Documentation
 Browse through the documentation of each component [here](./docs/index.md)
 
+#### Contribute
+All contributions are welcomed, but hey before working on a feature, please kindly suggest it as a new issue.
+And remember Clean code Rocks.
+ 
 #### License
 [MIT](LICENSE)
