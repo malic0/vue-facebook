@@ -5,6 +5,7 @@
 <script>
 export default {
 
+  name: "fb-comment",
 
   props: {
     url: {

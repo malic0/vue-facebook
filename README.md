@@ -13,7 +13,7 @@ npm install --save vue-facebook
 
 ### Usage
 
-##### All Features
+All Features
 
 ```js
 
@@ -24,27 +24,32 @@ import VueFacebook from 'vue-facebook';
 Vue.use(VueFacebook)
 ```
 
-##### Specific Components
+Specific Components
 ``` js
 // test.vue
 
 <script>
-
 import FbComment from "vue-facebook/components/_fb-comment";
 
-// Use either this method
 export default {
 	components: {
 		FbComment
 	},
 }
-
-// or 
-Vue.component(FbComment);
-
 </script>
-
 ```
+OR 
+```js
+
+// src/main.js
+
+import FbComment from "vue-facebook/components/_fb-comment";
+
+import Vue from "vue";
+Vue.component(FbComment);
+```
+
+
 In Vue/HTML template
 ```html
 <template>
