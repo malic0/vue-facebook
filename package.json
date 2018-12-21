@@ -1,37 +1,39 @@
 {
-  "name": "vue-facebook",
-  "version": "0.2.1",
-  "description": "Facebook Vue components ",
-  "main": "dist/vue-facebook.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --config config/webpack-dev.config.js",
-    "prod": "webpack --config config/webpack-prod.config.js"
-  },
-  "devDependencies": {
-    "vue": "^2.5.17",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2",
-    "vue-loader": "^15.4.2"
-  },
-  "peerDependencies": {
-    "vue": "^2.5.17"
-  },
-  "files": [
-    "dist/vue-facebook.js",
-    "src"
-  ],
-  "homepage": "https://github.com/malic0/vue-facebook#readme",
-  "keywords": [
-    "vue",
-    "facebook",
-    "vue-facebook",
-    "fb",
-    "comments",
-    "buttons"
-  ],
-  "license": "MIT",
-  "browserslist": [
-    "last 2 versions"
-  ]
+    "name": "vue-facebook",
+    "version": "0.2.1",
+    "description": "Facebook Vue components ",
+    "main": "dist/vue-facebook.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "webpack --config config/webpack-dev.config.js",
+        "prod": "webpack --config config/webpack-prod.config.js"
+    },
+    "devDependencies": {
+        "lodash": "^4.0.0",
+        "vue": "^2.5.17",
+        "webpack": "^4.27.1",
+        "webpack-cli": "^3.1.2",
+        "vue-loader": "^15.4.2"
+    },
+    "dependencies": {
+        "vue": "^2.5.17"
+    },
+    "files": [
+        "dist/vue-facebook.js",
+        "dist/vue-facebook.min.js",
+        "src"
+    ],
+    "homepage": "https://github.com/malic0/vue-facebook#readme",
+    "keywords": [
+        "vue",
+        "facebook",
+        "vue-facebook",
+        "fb",
+        "comments",
+        "buttons"
+    ],
+    "license": "MIT",
+    "browserslist": [
+        "last 2 versions"
+    ]
 }

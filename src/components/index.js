@@ -1,26 +1,11 @@
-/**
- * Reference: https://github.com/chrisvfritz/vue-enterprise-boilerplate/blob/master/src/components/_globals.js
- */
+import FbComment from "./FbComment.vue";
 
-import Vue from 'vue'
-import upperFirst from 'lodash/upperFirst'
-import camelCase from 'lodash/camelCase'
 
-const requireComponent = require.context(
-    '.',
-    false,
-    /_fb-[\w-]+\.vue$/
-)
-requireComponent.keys().forEach(fileName => {
+export default function install(Vue) {
+    Vue.component('FbComment', FbComment)
+}
 
-    const componentConfig = requireComponent(fileName)
-
-    const componentName = upperFirst(
-        camelCase(
-            fileName
-            .replace(/^\.\/_/, '')
-            .replace(/\.\w+$/, '')
-        )
-    )
-    Vue.component(componentName, componentConfig.default || componentConfig)
-})
+// auto install
+if (typeof window !== 'undefined' && typeof window.Vue !== 'undefined') {
+    window.Vue.use(install)
+}
