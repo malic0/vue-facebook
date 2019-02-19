@@ -18,8 +18,8 @@ Vue components that are meant to ease the integration of Facebook API to your Vu
 npm install --save vue-facebook
 ```
 
-#### Documentation & Usage
-Browse through the documentation of each component [here](./docs/index.md)
+#### Documentation
+Browse through the documentation of each component [here](https://github.com/malic0/vue-facebook/wiki)
 
 #### Contribute
 All contributions are welcomed, but hey before working on a feature, please kindly suggest it as a new issue.
