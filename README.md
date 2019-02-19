@@ -23,32 +23,11 @@ import VueFacebook from 'vue-facebook';
 
 Vue.use(VueFacebook)
 ```
+ or
 
-Specific Components
-``` js
-// test.vue
-
-<script>
-import FbComment from "vue-facebook/components/_fb-comment";
-
-export default {
-	components: {
-		FbComment
-	},
-}
-</script>
+```html
+<script src="https://unpkg.com/vue-facebook"></script>
 ```
-OR 
-```js
-
-// src/main.js
-
-import FbComment from "vue-facebook/components/_fb-comment";
-
-import Vue from "vue";
-Vue.component(FbComment);
-```
-
 
 In Vue/HTML template
 ```html
@@ -63,7 +42,7 @@ In Vue/HTML template
 ```
 
 #### Documentation
-Browse through the documentation of each component [here](./docs/index.md)
+Browse through the documentation of each component [here](https://github.com/malic0/vue-facebook/wiki)
 
 #### Contribute
 All contributions are welcomed, but hey before working on a feature, please kindly suggest it as a new issue.
