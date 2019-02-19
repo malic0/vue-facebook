@@ -29,8 +29,7 @@
         "vue": "^2.6.6"
     },
     "files": [
-        "dist/vue-facebook.js",
-        "dist/vue-facebook.min.js",
+        "dist",
         "src"
     ],
     "homepage": "https://github.com/malic0/vue-facebook#readme",
