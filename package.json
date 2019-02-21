@@ -1,6 +1,6 @@
 {
     "name": "vue-facebook",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Facebook Vue components ",
     "main": "dist/vue-facebook.js",
     "scripts": {
