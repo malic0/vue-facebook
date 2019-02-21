@@ -26,6 +26,7 @@
         "vue-template-compiler": "^2.6.6"
     },
     "dependencies": {
+        "rollup-plugin-copy-glob": "^0.3.0",
         "vue": "^2.6.6"
     },
     "files": [
