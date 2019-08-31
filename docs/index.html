@@ -28,7 +28,7 @@
         <div class="hero">
             <div class="hero-body ">
                 <h1 class="is-size-2">Vue Facebook</h1>
-                <p class="is-size-5 has-text-weight-light">Integrating Facebook Comments to your view applications</p>
+                <p class="is-size-5 has-text-weight-light">Integrating Facebook Comments to your Vue applications</p>
                 <div class="is-size-4 my-4">
                     <a class="has-text-dark" href="https://github.com/malic0/vue-facebook">
                         <ion-icon size="large" name="logo-github"></ion-icon>
@@ -44,6 +44,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="dist/vue-facebook.js"> </script>
     <script>
+    Vue.config.ignoredElements = ['ion-icon']
     new Vue({
         el: '#test'
     })
