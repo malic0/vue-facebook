@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\r\n\r\n  name: \"fb-comment\",\r\n\r\n  props: {\r\n    url: {\r\n      type: String\r\n    },\r\n    mobile: {\r\n      type: Boolean,\r\n      default: false\r\n    },\r\n    numposts: {\r\n      type: Number,\r\n      default: 10\r\n    },\r\n    orderBy: {\r\n      type: String,\r\n      default: \"social\"\r\n    },\r\n    colorsheme: {\r\n      type: String,\r\n      default: 'light'\r\n    }\r\n  }\r\n});\r\n\r\n\n\n//# sourceURL=webpack:///./src/components/FbComment.vue?./node_modules/vue-loader/lib??vue-loader-options");
+eval("__webpack_require__.r(__webpack_exports__);\n//\n//\n//\n//\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n\n  name: \"fb-comment\",\n\n  props: {\n    url: {\n      type: String\n    },\n    mobile: {\n      type: Boolean,\n      default: false\n    },\n    numposts: {\n      type: Number,\n      default: 10\n    },\n    orderBy: {\n      type: String,\n      default: \"social\"\n    },\n    colorsheme: {\n      type: String,\n      default: 'light'\n    }\n  }\n});\n\n\n\n//# sourceURL=webpack:///./src/components/FbComment.vue?./node_modules/vue-loader/lib??vue-loader-options");
 
 /***/ }),
 
@@ -158,18 +158,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 /***/ }),
 
-/***/ "./src/components/index.js":
-/*!*********************************!*\
-  !*** ./src/components/index.js ***!
-  \*********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return install; });\n/* harmony import */ var _FbComment_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FbComment.vue */ \"./src/components/FbComment.vue\");\n\r\n\r\n\r\nfunction install(Vue) {\r\n    Vue.component('FbComment', _FbComment_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\r\n}\r\n\r\n// auto install\r\nif (typeof window !== 'undefined' && typeof window.Vue !== 'undefined') {\r\n    window.Vue.use(install)\r\n}\r\n\n\n//# sourceURL=webpack:///./src/components/index.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -178,7 +166,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components */ \"./src/components/index.js\");\n\n\n/**\n * Register Facebook JS SDk\n */\nlet register = (d = document, s = 'script', id = 'facebook-jssdk') => {\n    var js, fjs = d.getElementsByTagName(s)[0];\n    if (d.getElementById(id)) return;\n    js = d.createElement(s);\n    js.id = id;\n    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';\n    fjs.parentNode.insertBefore(js, fjs);\n}\n\n\nconst VueFacebook = {\n    install(Vue, options) {\n        Vue.mixin({\n            created: function() {\n                register()\n            }\n        })\n    }\n}\n\nif (typeof window !== 'undefined' && window.Vue) {\n    window.Vue.use(VueFacebook)\n}\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (VueFacebook);\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_FbComment_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/FbComment.vue */ \"./src/components/FbComment.vue\");\n/**\n * Facebook Vue Plugin\n * @author Malico Yong <malico.yong@gmail.com>\n */\n\n\n\n/**\n * Register Facebook JS SDk\n */\nlet register = (d = document, s = 'script', id = 'facebook-jssdk') => {\n    var js, fjs = d.getElementsByTagName(s)[0];\n    if (d.getElementById(id)) return;\n    js = d.createElement(s);\n    js.id = id;\n    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';\n    fjs.parentNode.insertBefore(js, fjs);\n}\n\nlet VueFacebook = {\n    install(Vue, options) {\n\n        Vue.mixin({\n            created: function() {\n                register()\n            }\n        });\n\n        Vue.component('fb-comment', _components_FbComment_vue__WEBPACK_IMPORTED_MODULE_0__[\"default\"])\n    }\n}\n\nif (typeof window !== 'undefined' && window.Vue) {\n    window.Vue.use(VueFacebook)\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (VueFacebook);\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
