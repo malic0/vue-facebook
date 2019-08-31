@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk=" crossorigin="anonymous" />
+    <title>Vue Facebook</title>
+    <meta property="og:title" content="Vue Facebook | vue-facebook" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="Facebook API with Vue - Comments" />
+    <meta property="og:description" content="Facebook API with Vue - Comments" />
+    <link rel="canonical" href="https://malic0.github.io/vue-facebook/" />
+    <meta property="og:url" content="https://malic0.github.io/vue-facebook/" />
+    <meta property="og:site_name" content="vue-facebook" />
+    <style>
+    .my-4 {
+        margin-top: 1.2em;
+        margin-bottom: 1.2em;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div id="test" class="container has-text-centered">
+        <div class="hero">
+            <div class="hero-body ">
+                <h1 class="is-size-2">Vue Facebook</h1>
+                <p class="is-size-5 has-text-weight-light">Integrating Facebook Comments to your view applications</p>
+                <div class="is-size-4 my-4">
+                    <a class="has-text-dark" href="https://github.com/malic0/vue-facebook">
+                        <ion-icon size="large" name="logo-github"></ion-icon>
+                    </a>
+                </div>
+                <div>
+                    <a href="//github.com/malic0/vue-facebook" class="button is-primary">Docs</a>
+                </div>
+            </div>
+        </div>
+        <fb-comment url="https://malico.tk" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="dist/vue-facebook.js"> </script>
+    <script>
+    new Vue({
+        el: '#test'
+    })
+
+    </script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+
+</html>
