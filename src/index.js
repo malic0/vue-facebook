@@ -1,4 +1,9 @@
-import './components';
+/**
+ * Facebook Vue Plugin
+ * @author Malico Yong <malico.yong@gmail.com>
+ */
+
+import FbComment from "./components/FbComment.vue";
 
 /**
  * Register Facebook JS SDk
@@ -12,14 +17,16 @@ let register = (d = document, s = 'script', id = 'facebook-jssdk') => {
     fjs.parentNode.insertBefore(js, fjs);
 }
 
-
-const VueFacebook = {
+let VueFacebook = {
     install(Vue, options) {
+
         Vue.mixin({
             created: function() {
                 register()
             }
-        })
+        });
+
+        Vue.component('fb-comment', FbComment)
     }
 }
 
@@ -27,5 +34,4 @@ if (typeof window !== 'undefined' && window.Vue) {
     window.Vue.use(VueFacebook)
 }
 
-
-export default VueFacebook
+export default VueFacebook;
