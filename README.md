@@ -1,6 +1,10 @@
 # Vue Facebook
+<div>
+	<a href="https://www.npmjs.com/package/vue-facebook"><img src="https://nodei.co/npm/vue-facebook.png"></a>
+</div>
 
 Vue components that are meant to ease the integration of Facebook API to your Vue Application
+<a href="//malic0.github.io/vue-facebook">Demo</a>
 ### Features
 * Facebook Comments
 
@@ -11,63 +15,50 @@ Vue components that are meant to ease the integration of Facebook API to your Vu
 npm install --save vue-facebook
 ```
 
-### Usage
-
-All Features
+## Usage
 
 ```js
-
 // src/main.js
 import Vue from 'vue';
 import VueFacebook from 'vue-facebook';
 
 Vue.use(VueFacebook)
 ```
-
-Specific Components
-``` js
-// test.vue
-
+or
+```html
+<script src="https://unpkg.com/vue"></script>
+<script src="https://unpkg.com/vue-facebook"></script>
 <script>
-import FbComment from "vue-facebook/components/_fb-comment";
-
-export default {
-	components: {
-		FbComment
-	},
-}
+new Vue(
+	{
+		el: '#app'
+	}
+)
 </script>
 ```
-OR 
-```js
-
-// src/main.js
-
-import FbComment from "vue-facebook/components/_fb-comment";
-
-import Vue from "vue";
-Vue.component(FbComment);
-```
-
 
 In Vue/HTML template
-```html
+
+```vue
 <template>
-	<div class="content">
-		<div class="post">
-			<!-- Article -->
-		</div>
-		<fb-comment url="your-url.com/post-slug" />
-	</div>
+    <div class="content">
+        <div class="post">
+            <!-- Article -->
+        </div>
+        <fb-comment url="your-url.com/post-slug" />
+    </div>
 </template>
 ```
 
-#### Documentation
-Browse through the documentation of each component [here](./docs/index.md)
-
 #### Contribute
-All contributions are welcomed, but hey before working on a feature, please kindly suggest it as a new issue.
+All contributions are welcomed, but hey before working on a feature, please kindly suggest it as a new issue. Or a tweet <a href="https://twitter.com/malicoklash">@malicoklash</a>
+
 And remember Clean code Rocks.
  
+#### Author 
+
+* <a href="https://malico.tk">Malico</a>
+
+
 #### License
 [MIT](LICENSE)
