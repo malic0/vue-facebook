@@ -1,5 +1,5 @@
 <template>
-  <div class="fb-comments" :data-colorscheme="colorsheme" :data-mobile="mobile" :data-href="url" :data-numposts="numposts" :data-order-by="orderBy">
+  <div class="fb-comments" :data-colorscheme="colorsheme" :data-mobile="mobile" :data-width="width" :data-href="url" :data-numposts="numposts" :data-order-by="orderBy">
   </div>
 </template>
 <script>
@@ -22,6 +22,10 @@ export default {
     orderBy: {
       type: String,
       default: "social"
+    },
+    width: {
+      type: String,
+      default: "100%"
     },
     colorsheme: {
       type: String,
